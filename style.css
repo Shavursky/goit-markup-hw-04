@@ -9,6 +9,7 @@
     --color-grey: #2F303A;
     --accen-section-about: #F5F4FA;
     --fon-portfolio: #E5E5E5;
+    --icon-grey: #AFB1B8;
 }
 
 h1,
@@ -112,6 +113,8 @@ body {
 
 .mail-link,
 .tel-link {
+    display: flex;
+    align-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -132,9 +135,50 @@ body {
 
 /*----------ICON------------*/
 
-.icon-button {
-    padding: 0;
-    border: none;
+.icon-convert {
+    margin-right: 10.85px;
+}
+
+.icon-smartphone {
+    margin-right: 10.46px;
+}
+
+.icon-group-list {
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+}
+
+.social-list-icon {
+    width: 44px;
+    height: 44px;
+    fill: var(--icon-grey);
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--accent-color-white);
 }
 
 
@@ -144,6 +188,14 @@ body {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/hero.png);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .section-heading-links {
@@ -228,6 +280,7 @@ body {
     text-transform: uppercase;
     color: var(--accent-color-black);
     margin-bottom: 10px;
+    margin-top: 33px;
 }
 
 .content-desc {
@@ -315,6 +368,7 @@ body {
     line-height: 1.18;
     color: var(--accent-color-grey);
     text-align: center;
+    margin-bottom: 17px;
 }
 
 .our-comand {
@@ -408,7 +462,82 @@ body {
 }
 
 
+/*==============Наши клиенты=============*/
+
+.section-client {
+    padding-top: 101.41px;
+    padding-bottom: 94px;
+    background-color: var(--accent-color-white);
+}
+
+.client-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-section {
+    display: flex;
+    border: solid 1px #AFB1B8;
+    border-radius: 5px;
+    width: 170px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.yaco,
+.tagline,
+.company,
+.foster,
+.brand,
+.tag {
+    fill: var(--icon-grey);
+}
+
+.client-section:hover,
+.client-section:focus {
+    border: solid 1px var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.client-section:hover svg,
+.client-section:focus svg {
+    fill: var(--accent-color);
+}
+
+
+/* .client-section:hover .tagline,
+.client-section:focus .tagline {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .company,
+.client-section:focus .company {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .foster,
+.client-section:focus .foster {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .brand,
+.client-section:focus .brand {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .tag,
+.client-section:focus .tag {
+    fill: var(--accent-color);
+} */
+
+
 /*================footer=================*/
+
+.container-conect {
+    display: flex;
+}
 
 .footer-contact {
     background-color: var(--color-grey);
@@ -443,4 +572,54 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color-white);
     margin-bottom: 9px;
+}
+
+
+/*============для иконок=============*/
+
+.conect {
+    padding-top: 30px;
+    padding-left: 86px;
+}
+
+.conect-title {
+    text-transform: uppercase;
+    color: var(--accent-color-white);
+    width: 142.82px;
+    height: 15.02px;
+    margin-bottom: 21px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
+}
+
+.social-conect {
+    width: 44px;
+    height: 44px;
+    fill: var(--accent-color-white);
+}
+
+.social-link-conect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-link-conect:hover,
+.social-link-conect:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link-conect:hover .social-conect,
+.social-link-conect:focus .social-conect {
+    fill: var(--accent-color-white);
 }
