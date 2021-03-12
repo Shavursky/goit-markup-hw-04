@@ -114,13 +114,12 @@ body {
 .mail-link,
 .tel-link {
     display: flex;
-    align-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color-grey);
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
