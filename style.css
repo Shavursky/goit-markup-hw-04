@@ -65,6 +65,11 @@ body {
 
 /*======Flex======*/
 
+.nav-header {
+    display: flex;
+    align-items: baseline;
+}
+
 .list-nav {
     display: flex;
     margin-left: 93px;
@@ -103,8 +108,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color-black);
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .logo {
@@ -138,26 +141,33 @@ body {
     margin-right: 10.85px;
 }
 
+.tel-link:hover .icon-smartphone,
+.tel-link:focus .icon-smartphone,
+.mail-link:hover .icon-convert,
+.mail-link:focus .icon-convert {
+    fill: var(--accent-color);
+}
+
 .icon-smartphone {
     margin-right: 10.46px;
 }
 
 .icon-group-list {
+    display: flex;
+    width: 270px;
+    height: 120px;
     background-color: #F5F4FA;
-    padding: 25px 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-list {
     display: flex;
     align-items: center;
-    padding-left: 32px;
-    padding-right: 32px;
     justify-content: space-between;
 }
 
 .social-list-icon {
-    width: 44px;
-    height: 44px;
     fill: var(--icon-grey);
 }
 
@@ -189,7 +199,7 @@ body {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/hero.png);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./image/hero.png);
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -371,8 +381,7 @@ body {
 }
 
 .our-comand {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 34px 32px 30px 32px;
 }
 
 .main-button:hover,
@@ -429,6 +438,7 @@ body {
     background: var(--accent-color-white);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .card:nth-child(3n) {
@@ -476,11 +486,13 @@ body {
 
 .client-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.client-section {
+.client-list-item {
+    margin-right: 30px;
+}
+
+.client-link {
     display: flex;
     border: solid 1px #AFB1B8;
     border-radius: 5px;
@@ -499,14 +511,14 @@ body {
     fill: var(--icon-grey);
 }
 
-.client-section:hover,
-.client-section:focus {
+.client-link:hover,
+.client-link:focus {
     border: solid 1px var(--accent-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.client-section:hover svg,
-.client-section:focus svg {
+.client-link:hover svg,
+.client-link:focus svg {
     fill: var(--accent-color);
 }
 
@@ -541,6 +553,7 @@ body {
 
 .container-conect {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-contact {
@@ -582,23 +595,18 @@ body {
 /*============для иконок=============*/
 
 .conect {
-    padding-top: 30px;
-    padding-left: 86px;
+    margin-left: 86px;
 }
 
 .conect-title {
     text-transform: uppercase;
     color: var(--accent-color-white);
-    width: 142.82px;
-    height: 15.02px;
     margin-bottom: 21px;
 }
 
 .footer-social-list {
     display: flex;
     align-items: center;
-    width: 206px;
-    height: 44px;
     justify-content: space-between;
 }
 
@@ -616,6 +624,10 @@ body {
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+
+.social-list-item {
+    margin-right: 10px;
 }
 
 .social-link-conect:hover,
