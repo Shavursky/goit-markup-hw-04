@@ -514,7 +514,6 @@ body {
 .client-link:hover,
 .client-link:focus {
     border: solid 1px var(--accent-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .client-link:hover svg,
@@ -606,8 +605,6 @@ body {
 
 .footer-social-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .social-conect {
